@@ -90,26 +90,24 @@ const ExcitingLoader = ({ title, steps, isOpen = true }: ExcitingLoaderProps) =>
       {/* Loader card container with rotating gradient border */}
       <div className="relative p-[2px] rounded-xl rotating-border loader-card-entrance">
         {/* Inner white card */}
-        <div className="relative z-10 bg-card rounded-[12px] px-8 py-8 min-w-[420px] max-w-[500px]">
+        <div className="relative z-10 bg-card rounded-[12px] px-8 py-8 w-[420px]">
           {/* Title */}
           <h2 className="text-xl font-semibold text-card-foreground text-center mb-6">
             {title}
           </h2>
 
-          {/* Steps */}
+          {/* Steps - all visible, fixed layout */}
           <div className="flex flex-col gap-3">
-            {steps
-              .filter((step) => step.state !== "inactive")
-              .map((step) => (
-                <LoaderField
-                  key={step.id}
-                  state={step.state}
-                  loadingTitle={step.loadingTitle}
-                  completeText={step.completeText}
-                  counter={step.counter}
-                  counterLabel={step.counterLabel}
-                />
-              ))}
+            {steps.map((step) => (
+              <LoaderField
+                key={step.id}
+                state={step.state}
+                loadingTitle={step.loadingTitle}
+                completeText={step.completeText}
+                counter={step.counter}
+                counterLabel={step.counterLabel}
+              />
+            ))}
           </div>
         </div>
       </div>
