@@ -22,7 +22,7 @@ const LoaderField = ({
   }
 
   return (
-    <div className="flex items-center justify-between px-3 py-4 bg-card rounded-[6px] border border-[#E2E2E2] transition-all duration-300">
+    <div className="flex items-center justify-between pl-3 pr-3 py-4 bg-card rounded-[6px] border border-[#E2E2E2] transition-all duration-300">
       <div className="flex items-center gap-3">
         {/* Spinner or Checkmark */}
         {state === "loading" ? (
@@ -69,7 +69,7 @@ const LoaderField = ({
 
       {/* Counter */}
       {state === "loading" && counter !== undefined && (
-        <span className="text-loader-counter text-sm font-medium tabular-nums">
+        <span className="text-loader-counter text-sm font-medium tabular-nums pr-[9px]">
           {counter.toLocaleString()} {counterLabel}
         </span>
       )}
