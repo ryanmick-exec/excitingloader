@@ -27,49 +27,49 @@ const ExcitingLoader = ({ title, steps, isOpen = true }: ExcitingLoaderProps) =>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
         {/* Shape 1 - Large blue */}
         <div 
-          className="absolute w-[350px] h-[350px] rounded-full bg-loader-blue/35 blur-[80px]"
+          className="absolute w-[180px] h-[180px] rounded-full bg-loader-blue/40 blur-[60px]"
           style={{ 
-            '--orbit-radius': '120px',
+            '--orbit-radius': '280px',
             animation: 'orbit 8s linear infinite, pulse-glow 3s ease-in-out infinite'
           } as React.CSSProperties}
         />
         {/* Shape 2 - Medium teal */}
         <div 
-          className="absolute w-[280px] h-[280px] rounded-full bg-loader-teal/40 blur-[70px]"
+          className="absolute w-[120px] h-[120px] rounded-full bg-loader-teal/50 blur-[50px]"
           style={{ 
-            '--orbit-radius': '100px',
+            '--orbit-radius': '260px',
             animation: 'orbit 10s linear infinite reverse, pulse-glow 4s ease-in-out infinite 1s'
           } as React.CSSProperties}
         />
-        {/* Shape 3 - Large blue */}
+        {/* Shape 3 - Small blue */}
         <div 
-          className="absolute w-[320px] h-[320px] rounded-full bg-loader-blue/30 blur-[75px]"
+          className="absolute w-[80px] h-[80px] rounded-full bg-loader-blue/50 blur-[40px]"
           style={{ 
-            '--orbit-radius': '140px',
+            '--orbit-radius': '300px',
             animation: 'orbit 6s linear infinite, pulse-glow 2.5s ease-in-out infinite 0.5s'
           } as React.CSSProperties}
         />
         {/* Shape 4 - Large teal */}
         <div 
-          className="absolute w-[300px] h-[300px] rounded-full bg-loader-teal/35 blur-[70px]"
+          className="absolute w-[150px] h-[150px] rounded-full bg-loader-teal/40 blur-[55px]"
           style={{ 
-            '--orbit-radius': '90px',
+            '--orbit-radius': '240px',
             animation: 'orbit 12s linear infinite, pulse-glow 3.5s ease-in-out infinite 2s'
           } as React.CSSProperties}
         />
-        {/* Shape 5 - Medium teal */}
+        {/* Shape 5 - Small teal */}
         <div 
-          className="absolute w-[260px] h-[260px] rounded-full bg-loader-teal/45 blur-[65px]"
+          className="absolute w-[60px] h-[60px] rounded-full bg-loader-teal/60 blur-[30px]"
           style={{ 
-            '--orbit-radius': '130px',
+            '--orbit-radius': '320px',
             animation: 'orbit 7s linear infinite reverse, pulse-glow 2s ease-in-out infinite 1.5s'
           } as React.CSSProperties}
         />
         {/* Shape 6 - Medium blue */}
         <div 
-          className="absolute w-[290px] h-[290px] rounded-full bg-loader-blue/40 blur-[72px]"
+          className="absolute w-[100px] h-[100px] rounded-full bg-loader-blue/45 blur-[45px]"
           style={{ 
-            '--orbit-radius': '110px',
+            '--orbit-radius': '290px',
             animation: 'orbit 9s linear infinite, pulse-glow 3s ease-in-out infinite 0.8s'
           } as React.CSSProperties}
         />
