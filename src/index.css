@@ -121,11 +121,11 @@ All colors MUST be HSL.
 
 /* Rotating gradient border animation */
 @keyframes rotate-gradient {
-  0% {
-    --gradient-angle: 0deg;
+  from {
+    transform: rotate(0deg);
   }
-  100% {
-    --gradient-angle: 360deg;
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -149,21 +149,23 @@ All colors MUST be HSL.
   }
 }
 
-@property --gradient-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+.rotating-border {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
 }
 
-.rotating-border {
-  --gradient-angle: 0deg;
+.rotating-border::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
   background: conic-gradient(
-    from var(--gradient-angle),
+    from 0deg,
     hsl(var(--loader-blue)),
     hsl(var(--loader-teal)),
     hsl(var(--loader-blue))
   );
-  animation: rotate-gradient 4s linear infinite;
+  animation: rotate-gradient 2s linear infinite;
 }
 
 .pulse-glow-blue {
