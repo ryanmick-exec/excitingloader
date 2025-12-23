@@ -24,7 +24,7 @@ const ExcitingLoader = ({ title, steps, isOpen = true }: ExcitingLoaderProps) =>
       <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
 
       {/* Orbiting blurred shapes */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-[60%] -translate-y-[55%] pointer-events-none">
+      <div className="absolute top-1/2 left-1/2 -translate-x-[70%] -translate-y-[65%] pointer-events-none">
         {/* Shape 1 - Large blue */}
         <div 
           className="absolute w-[280px] h-[280px] rounded-full bg-loader-blue/40 blur-[80px]"
