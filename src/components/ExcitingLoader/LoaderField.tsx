@@ -57,7 +57,7 @@ const LoaderField = ({
 
         {/* Title or Complete Text */}
         <span
-          className={`font-medium transition-colors duration-300 ${
+          className={`text-sm font-medium transition-colors duration-300 ${
             state === "loading"
               ? "text-loader-text-loading"
               : "text-loader-text-complete"
@@ -69,7 +69,7 @@ const LoaderField = ({
 
       {/* Counter */}
       {state === "loading" && counter !== undefined && (
-        <span className="text-loader-counter text-sm font-medium">
+        <span className="text-loader-counter text-sm font-medium tabular-nums">
           {counter.toLocaleString()} {counterLabel}
         </span>
       )}
