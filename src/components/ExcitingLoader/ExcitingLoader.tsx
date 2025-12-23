@@ -90,7 +90,7 @@ const ExcitingLoader = ({ title, steps, isOpen = true }: ExcitingLoaderProps) =>
       {/* Loader card container with rotating gradient border */}
       <div className="relative p-[2px] rounded-xl rotating-border">
         {/* Inner white card */}
-        <div className="relative z-10 bg-card rounded-[10px] px-8 py-8 min-w-[420px] max-w-[500px]">
+        <div className="relative z-10 bg-card rounded-[12px] px-8 py-8 min-w-[420px] max-w-[500px]">
           {/* Title */}
           <h2 className="text-xl font-semibold text-card-foreground text-center mb-6">
             {title}
