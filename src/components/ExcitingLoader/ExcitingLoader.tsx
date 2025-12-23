@@ -21,7 +21,7 @@ const ExcitingLoader = ({ title, steps, isOpen = true }: ExcitingLoaderProps) =>
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-background/60 backdrop-blur-sm backdrop-entrance" />
 
       {/* Orbiting blurred shapes */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
@@ -88,7 +88,7 @@ const ExcitingLoader = ({ title, steps, isOpen = true }: ExcitingLoaderProps) =>
       </div>
 
       {/* Loader card container with rotating gradient border */}
-      <div className="relative p-[2px] rounded-xl rotating-border">
+      <div className="relative p-[2px] rounded-xl rotating-border loader-card-entrance">
         {/* Inner white card */}
         <div className="relative z-10 bg-card rounded-[12px] px-8 py-8 min-w-[420px] max-w-[500px]">
           {/* Title */}
