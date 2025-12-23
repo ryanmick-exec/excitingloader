@@ -22,7 +22,7 @@ const LoaderField = ({
   }
 
   return (
-    <div className="flex items-center justify-between px-5 py-4 bg-card rounded-lg border border-border/50 transition-all duration-300">
+    <div className="flex items-center justify-between px-5 py-4 bg-card rounded-[6px] border border-loader-blue transition-all duration-300">
       <div className="flex items-center gap-3">
         {/* Spinner or Checkmark */}
         {state === "loading" ? (
