@@ -159,7 +159,7 @@ All colors MUST be HSL.
 .rotating-border {
   position: relative;
   overflow: hidden;
-  border-radius: 0.75rem;
+  border-radius: 12px;
 }
 
 .rotating-border::before {
