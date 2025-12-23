@@ -6,9 +6,10 @@ const Index = () => {
     {
       id: "import",
       state: "loading",
-      loadingTitle: "Importing your calls",
+      loadingTitle: "Importing Calls",
       completeText: "2,049 Calls Imported",
       counter: 0,
+      counterLabel: "calls",
     },
     {
       id: "categorize",
