@@ -165,7 +165,7 @@ All colors MUST be HSL.
     hsl(var(--loader-teal)),
     hsl(var(--loader-blue))
   );
-  animation: rotate-gradient 2s linear infinite;
+  animation: rotate-gradient 5s linear infinite;
 }
 
 .pulse-glow-blue {
